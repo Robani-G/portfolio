@@ -22,9 +22,9 @@ function Intro() {
           <Image
             width={100}
             height={100}
-            quality={95}
+            quality={100}
             priority={true}
-            src="/pro.jpg"
+            src="/profile.jpg"
             alt={"Profile Pictures"}
             className="w-50 h-50 m-6 rounded-full border-2 border-white shadow "
           />
