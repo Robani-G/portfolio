@@ -41,7 +41,7 @@ export const myprojects = [
       "I worked as a front-end developer on this project,Used for a Promotion",
     tags: [reactjs,nextjs,tailwindcss,typescript],
     img: lulawi,
-    link:"lualwi.com"
+    link:"lulawi.com"
   },
   {
     title: "Lulawi",
@@ -59,21 +59,34 @@ export const myskills=[
   
 ]as const;
 export const Experiences=[
+
+  {
+    title:"Html,Css,Javascript",
+    location:"",
+    description:"I learned these first from youtube ",
+    date:"Jan 1 2019"
+  }, {
+    title:"React,Nextjs",
+    location:"",
+    description:"After mastering on the fundamentals front-end stack I learned these  efficient reusable front-end frame work",
+    date:"Feb 2020"
+  },
+  {
+    title:"PHP,Laravel,MySql",
+    location:"",
+    description:"As a full stack developer built my first project",
+    date:"July 20 2021"
+  },
+  {
+    title:"Prisma,typescript,tRPC",
+    location:"",
+    description:"Learned how to  integrate with api and  typescripting ",
+    date:"July 20 2022"
+  },
   {
     title:"Graduated at Unity University",
     location:"Addis Ababa",
-    description:"hello it is me as always",
-    date:"July 20"
+    description:"Bachelor degree in Computer Science",
+    date:"July 27 2022"
   },
-  {
-    title:"html",
-    location:"Addis Ababa",
-    description:"hello it is me as always",
-    date:"ffdf 45"
-  }, {
-    title:"html",
-    location:"Addis Ababa",
-    description:"hello it is me as always",
-    date:"february 29"
-  }
 ]as const;

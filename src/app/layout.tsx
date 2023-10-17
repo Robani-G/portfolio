@@ -27,7 +27,7 @@ export default function RootLayout({
     
       
     <html lang="en" className='  '>
-      <body className={`container mx-auto dark:bg-gray-800  bg-white `}>
+      <body className={`container mx-auto dark:bg-gray-800  {bg-gradient-to-r from-purple-100 to-sky-200 }`}>
        <Flowbite>
        <Toaster position='top-right'/>
       <Header />

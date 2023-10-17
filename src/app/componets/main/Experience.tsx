@@ -12,7 +12,7 @@ function Experience() {
   return (
     
     <Layout clasName=''>
-    <section id='Experience' className='relative border-gray-200 dark:border-gray-700 scroll-mt-28'>
+    <section id='Experience' className='relative border-l border-gray-200 dark:border-gray-700 scroll-mt-28'>
             <SectionHeading>
                 My Experience
             </SectionHeading>
@@ -25,7 +25,7 @@ Experiences.map((exp,index)=>(
   <Timeline.Item key={index} className='mb-10 ml-6'>
   <Timeline.Point className='absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-3 ring-white dark:bg-gray-900 dark:ring-gray-900' />
   <Timeline.Content className='mt-3 sm:pr-8'>
-    <Timeline.Time className='text-gray-500'>
+    <Timeline.Time className='dark:text-gray-500'>
 {exp.date}    </Timeline.Time>
     
    <h1 className='dark:text-white'>{exp.title}</h1>
@@ -33,6 +33,8 @@ Experiences.map((exp,index)=>(
       <p>
       {exp.description}
       </p>
+      <Timeline.Time className='dark:text-gray-500'>
+{exp.location}    </Timeline.Time>
     </Timeline.Body>
   </Timeline.Content>
 </Timeline.Item>

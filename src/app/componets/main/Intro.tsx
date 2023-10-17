@@ -24,7 +24,7 @@ function Intro() {
             height={100}
             quality={95}
             priority={true}
-            src="/pro.jpg"
+            src="/roba2.jpg"
             alt={"Profile Pictures"}
             className="w-50 h-50 m-6 rounded-full border-2 border-white shadow "
           />
