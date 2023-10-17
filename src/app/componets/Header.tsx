@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { links } from "../lib/data";
 import Link from "next/link";
 import clsx from "clsx";
+import { DarkThemeToggle, Flowbite } from 'flowbite-react';
 
 export default function Header() {
   const [activeSection, SetactiveSection] = useState("Home");
@@ -52,7 +53,10 @@ export default function Header() {
                 </motion.li>
               </>
             ))}
+                  <DarkThemeToggle />
+
           </ul>
+         
         </nav>
       </motion.div>
     </header>
