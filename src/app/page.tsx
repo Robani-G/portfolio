@@ -7,6 +7,7 @@ import Skills from './componets/main/Skills'
 import Experience from './componets/main/Experience'
 import Contact from './componets/main/Contact'
 
+
 export default function Home() {
   return (
     <main>

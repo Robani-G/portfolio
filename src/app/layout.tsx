@@ -20,7 +20,7 @@ export default function RootLayout({
 
   
   return (
-    <html lang="en" className=' h-[5000px] bg-gradient-to-r from-purple-100 to-sky-100 '>
+    <html lang="en" className='  '>
       <body className={`container mx-auto`}>
         <Toaster position='top-right'/>
       <Header />

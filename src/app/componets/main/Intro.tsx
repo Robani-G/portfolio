@@ -22,7 +22,7 @@ function Intro() {
           <Image
             width={100}
             height={100}
-            quality={100}
+            quality={95}
             priority={true}
             src="/profile.jpg"
             alt={"Profile Pictures"}
@@ -34,7 +34,7 @@ function Intro() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p className="mx-2 max-w-[50rem] rounded-xl  bg-white p-2 px-4 text-2xl font-medium leading-relaxed text-gray-600 sm:text-3xl">
+          <p className="mx-2 max-w-[50rem] rounded-xl shadow bg-white p-2 px-4 text-2xl font-medium leading-relaxed text-gray-600 sm:text-3xl">
             Hello❤️I'm {""}
             <span className=" font-bold text-black">Robani Girma! </span>A
             full-stack developer with {""}
@@ -46,16 +46,16 @@ function Intro() {
           </p>
         </motion.div>
       </div>
-      <div className=" item-center mt-4 flex flex-col justify-center gap-2 px-4 sm:flex-row  ">
+      <div className=" item-center mt-4 flex flex-col justify-center gap-2 px-4 sm:flex-row   ">
         <a
           href="/portfolio.pdf"
-          className="flex w-full items-center justify-center rounded-lg bg-white  p-2 text-black sm:w-1/3"
+          className="flex w-full items-center justify-center rounded-lg bg-gray-600 hover:bg-gray-900 text-white  p-2 text-black sm:w-1/3"
         >
-          Download Cv <ArrowDownCircleIcon className="h-7s w-5" />
+          Download Cv <ArrowDownCircleIcon className="h-7 w-5" />
         </a>
         <Link
           href="#Contact"
-          className="flex w-full items-center justify-center rounded-lg bg-gray-900 p-2 text-white  sm:w-1/3"
+          className="flex w-full items-center justify-center rounded-lg bg-gray-900 hover:bg-gray-600 p-2 text-white  sm:w-1/3"
         >
           Contact me here
           <ArrowLongRightIcon className="h-5 w-7" />

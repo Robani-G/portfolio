@@ -1,35 +1,55 @@
-"use client"
+"use client";
 import React from 'react'
 import Layout from '../layout'
 import SectionHeading from '../Sectionheading'
 import { Experiences } from '@/app/lib/data';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { Timeline,Button } from 'flowbite-react';
+import { HiCalendar } from 'react-icons/hi';
 
 function Experience() {
   return (
-    <>
+    
     <Layout clasName=''>
-        <div id='Experience' className='scroll-mt-28'>
+    <section id='Experience' className='relative  border-gray-200 dark:border-gray-700'>
             <SectionHeading>
                 My Experience
             </SectionHeading>
-            <VerticalTimeline>
-                {
-                    Experiences.map((exp,index)=>(
-                        <React.Fragment key={index}>
-                            <VerticalTimelineElement >
-                            <h1>{exp.title}</h1>
-                            <h4>{exp.location}</h4>
-                            <p>{exp.description}</p>
-                        </VerticalTimelineElement>
-                        </React.Fragment>
-                        
-                    ))
-                }
-            </VerticalTimeline>
-        </div>
+      <Timeline className=''>
+      {
+
+Experiences.map((exp,index)=>(
+
+
+  <Timeline.Item key={index} className='mb-10 ml-6'>
+  <Timeline.Point className='absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-gray-200 ring-3 ring-white dark:bg-gray-900 dark:ring-gray-900' />
+  <Timeline.Content className='mt-3 sm:pr-8'>
+    <Timeline.Time>
+{exp.date}    </Timeline.Time>
+    
+   <h1>{exp.title}</h1>
+    <Timeline.Body>
+      <p>
+      {exp.description}
+      </p>
+    </Timeline.Body>
+  </Timeline.Content>
+</Timeline.Item>
+
+
+))}
+
+      </Timeline>
+        </section>
+    </Layout>
         
-        </Layout></>
+        
+       
+ 
+
+                    
+        
   )
 }
 

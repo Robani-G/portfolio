@@ -13,6 +13,8 @@
     "@react-email/components": "^0.0.7",
     "@react-email/tailwind": "^0.0.8",
     "clsx": "^2.0.0",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.6.4",
     "framer": "^2.4.1",
     "motion": "^10.16.4",
     "next": "13.5.4",

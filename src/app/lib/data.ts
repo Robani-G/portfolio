@@ -1,6 +1,6 @@
 import lulawi from "public/lulawi.png";
 import reactjs from "public/reactss.jpg"
-import nextjs from"public/Next.js-React-Framework.jpg"
+import nextjs from"public/nextttt.png"
 import tailwindcss from "public/ta.jpg"
 import typescript from "public/OIP.jpg"
 import laravel from "public/laravel.jpg"
@@ -41,6 +41,7 @@ export const myprojects = [
       "I worked as a front-end developer on this project,Used for a Promotion",
     tags: [reactjs,nextjs,tailwindcss,typescript],
     img: lulawi,
+    link:"lualwi.com"
   },
   {
     title: "Lulawi",
@@ -48,6 +49,7 @@ export const myprojects = [
       "I worked as a front-end developer on this project,Used for a Promotion",
     tags: [reactjs,nextjs,tailwindcss,typescript],
     img: lulawi,
+    link:"lulawi.com"
   },
 ] as const;
 export const myskills=[
@@ -58,15 +60,20 @@ export const myskills=[
 ]as const;
 export const Experiences=[
   {
-    title:"html",
+    title:"Graduated at Unity University",
     location:"Addis Ababa",
     description:"hello it is me as always",
-    date:""
+    date:"July 20"
   },
   {
     title:"html",
     location:"Addis Ababa",
     description:"hello it is me as always",
-    date:""
+    date:"ffdf 45"
+  }, {
+    title:"html",
+    location:"Addis Ababa",
+    description:"hello it is me as always",
+    date:"february 29"
   }
 ]as const;
