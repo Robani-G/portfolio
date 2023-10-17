@@ -12,8 +12,9 @@ export default function Home() {
   return (
     <main>
         <Intro/>
-        <About />
         <Myprojects   />
+
+        <About />
         <Skills/>
         <Experience/>
         <Contact/>

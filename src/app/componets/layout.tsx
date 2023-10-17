@@ -6,7 +6,7 @@ type LayoutProps = {
 };
 function Layout({ children ,clasName}: LayoutProps) {
   return (
-    <div className={`flex w-full  justify-center p-3 ${clasName}`}>
+    <div className={`flex w-full  justify-center mt-10  p-2 ${clasName}`}>
 
       {children}
     </div>

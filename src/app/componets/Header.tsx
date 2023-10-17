@@ -11,13 +11,13 @@ export default function Header() {
   return (
     <header className="  relative z-[999]  flex w-full justify-center  items-center mx-auto container   ">
       <motion.div
-        className="fixed top-0  h-[2.5rem]  w-full   border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] top-4  sm:top-6 sm:h-[3.25rem] sm:w-[36rem] rounded-full "
+        className="fixed top-0  h-[2.5rem]  w-full   border border-white border-opacity-40 bg-white dark:bg-gray-700 bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] top-4  sm:top-6 sm:h-[3.25rem] sm:w-[36rem] rounded-full "
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0,  opacity: 1 }}>
       
         <nav className="">
           <ul 
-          className="flex sm:w-[36rem]  overflow-hidden flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[0.9rem] font-medium text-gray-500  sm:w-[initial] sm:gap-3"
+          className="flex sm:w-[36rem]  overflow-hidden flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[0.9rem] font-medium text-gray-500 dark:text-white  sm:w-[initial] sm:gap-3"
           >
             {" "}
             {links.map((link) => (
@@ -30,7 +30,7 @@ export default function Header() {
                     href={link.hash}
                     onClick={()=>SetactiveSection(link.name)}
                     className={clsx(
-                      " relative flex w-full items-center justify-center py-2  sm:px-2 sm:py-3 transition hover:text-gray-950 ",
+                      " relative flex w-full items-center justify-center py-2  sm:px-2 sm:py-3 transition hover:text-gray-950 dark:hover:text-gray-400",
                       {
                         "text-gray-950":
                           activeSection === link.name,

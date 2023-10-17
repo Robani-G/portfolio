@@ -11,7 +11,7 @@ function About() {
       >
         <SectionHeading>About Me</SectionHeading>
 
-        <p className="  max-w-[70rem] rounded-xl p-2 px-4 text-2xl font-medium leading-relaxed text-gray-600 sm:text-3xl">
+        <p className="  max-w-[70rem] rounded-xl p-2 px-4 text-2xl font-medium leading-relaxed text-gray-600 dark:text-gray-300 sm:text-3xl">
           A strong Computer Science Engineering resume should emphasize the
           candidate's ability to design and develop software applications that
           drive user engagement and improve system performance. Highlighting

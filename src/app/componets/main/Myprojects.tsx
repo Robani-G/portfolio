@@ -3,7 +3,7 @@ import Layout from "../layout";
 const Myprojects = () => {
   return (
     <Layout clasName="">
-      <div className="rounded-lg">
+      <div className="rounded-lg scroll-mt-28 "  id="Projects">
         <SectionHeading>My Projects</SectionHeading>
 
         <div className="flex flex-col  gap-4 max-w-[42rem] max-h-[26rem] mb-8 ">
@@ -31,12 +31,12 @@ type projectprop = (typeof myprojects)[number];
 const Projects = ({ title, description, img, tags ,link}: projectprop) => {
   return (
     <>
-     <Layout clasName="rounded-lg p-5 shadow" >
-      <section id="Projects" className="scroll-mt-28">
+     <Layout clasName="rounded-lg p-5 shadow " >
+      <section className=" ">
       <div className=" flex  items-center justify-center ">
       <div className="w-1/2 gap-2">
-      <h3 className="text-xl font-medium">{title}</h3>
-        <p className="text-gray-500">{description}</p>
+      <h3 className="text-xl font-medium dark:text-white ">{title}</h3>
+        <p className="text-gray-500 dark:text-gray-300">{description}</p>
         
         <ul className="flex flex-row gap-3 items-center">
           {tags.map((tag,index)=>(
@@ -46,11 +46,11 @@ const Projects = ({ title, description, img, tags ,link}: projectprop) => {
             </li>
           ))}
         </ul>
-        <div className=" flex text-semibold text-blue-600  items-center">
+        <div className=" flex text-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 items-center">
         <a href={`http://${link}`} >Live Demo</a> <ArrowTopRightOnSquareIcon className="w-4 h-4 text-bold "/>
       </div>
       </div>
-      <Image quality={95} alt="Project Image" className="w-1/2 " src={img}/>
+      <Image quality={95} alt="Project Image" className="w-1/2 rounded-lg" src={img}/>
       
       </div>
      
