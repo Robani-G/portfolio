@@ -24,17 +24,18 @@ export default function RootLayout({
 
   
   return (
-    <Flowbite>
+    
       
     <html lang="en" className='  '>
-      <body className={`container mx-auto bg-red-200 dark:bg-yellow-300  `}>
-        <Toaster position='top-right'/>
+      <body className={`container mx-auto dark:bg-gray-800  bg-white `}>
+       <Flowbite>
+       <Toaster position='top-right'/>
       <Header />
 
         {children}
         <Footer/>
+       </Flowbite>
         </body>
     </html>
-    </Flowbite>
   )
 }
