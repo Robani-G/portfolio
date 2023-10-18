@@ -41,8 +41,7 @@ function Intro() {
             <span className=" font-bold text-black dark:text-white">2 </span>
             Years of experience and a degree in {""}
             <span className=" font-bold text-black dark:text-white">Computer Science </span>I
-            enjoy building websites.My foucus is {""}
-            <span className=" font-bold text-black dark:text-white">React(Next.js) </span>
+            enjoy building websites.
           </p>
         </motion.div>
       </div>
