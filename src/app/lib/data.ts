@@ -6,6 +6,16 @@ import typescript from "public/OIP.jpg"
 import laravel from "public/laravel.jpg"
 import php from "public/php.png"
 import git from "public/git.jpg"
+import {AiFillGithub, AiFillLinkedin,AiFillHtml5 } from 'react-icons/ai';
+import {FaReact,FaLaravel,FaPhp} from 'react-icons/fa'
+import {TbBrandNextjs} from 'react-icons/tb'
+import {SiTypescript,SiTrpc} from 'react-icons/si'
+import {BiLogoTailwindCss,BiLogoJavascript,BiLogoCss3} from 'react-icons/bi'
+
+
+
+import React from "react";
+
 
 export const links = [
   {
@@ -39,7 +49,13 @@ export const myprojects = [
     title: "Lulawi",
     description:
       "I worked as a front-end developer on this project,Used for a Promotion",
-    tags: [reactjs,nextjs,tailwindcss,typescript],
+    tags: [      React.createElement(FaReact),
+      React.createElement(BiLogoTailwindCss),
+      React.createElement(SiTypescript),
+      React.createElement(TbBrandNextjs),
+
+
+      ],
     img: lulawi,
     link:"lulawi.com"
   },
@@ -47,14 +63,37 @@ export const myprojects = [
     title: "Lulawi",
     description:
       "I worked as a front-end developer on this project,Used for a Promotion",
-    tags: [reactjs,nextjs,tailwindcss,typescript],
+    tags: [
+      React.createElement(FaReact),
+      React.createElement(BiLogoTailwindCss),
+      React.createElement(SiTypescript),
+      React.createElement(TbBrandNextjs),
+      ],
     img: lulawi,
     link:"lulawi.com"
   },
 ] as const;
+// export const myskills=[
+//   {
+//     images:[reactjs,nextjs,tailwindcss,typescript,laravel,php,git]
+//   }
 export const myskills=[
   {
-    images:[reactjs,nextjs,tailwindcss,typescript,laravel,php,git]
+    images:[React.createElement(AiFillGithub),
+      React.createElement(FaReact),
+      React.createElement(TbBrandNextjs),
+      React.createElement(FaLaravel),
+      React.createElement(FaPhp),
+      React.createElement(SiTypescript),
+      React.createElement(SiTrpc),
+      React.createElement(AiFillHtml5),
+      React.createElement(BiLogoCss3),
+      React.createElement(BiLogoJavascript),
+
+      React.createElement(BiLogoTailwindCss),
+
+
+    ]
   }
   
 ]as const;

@@ -31,18 +31,18 @@ type projectprop = (typeof myprojects)[number];
 const Projects = ({ title, description, img, tags ,link}: projectprop) => {
   return (
     <>
-     <Layout clasName="rounded-lg p-5 shadow " >
+     <Layout clasName="rounded-lg p-5 shadow bg-gray-100 dark:bg-gray-700 " >
       <section className=" ">
       <div className=" flex  items-center justify-center ">
       <div className="w-1/2 gap-2">
       <h3 className="text-xl font-medium dark:text-white ">{title}</h3>
         <p className="text-gray-500 dark:text-gray-300">{description}</p>
         
-        <ul className="flex flex-row gap-3 items-center">
+        <ul className="flex  gap-2 items-center jusify-center ">
           {tags.map((tag,index)=>(
-            <li key={index}>
-      <Image quality={95} alt="Project Image" className="w-6 h-6  rounded-full object-cover m-2 " src={tag}/>
-      
+            <li key={index} className=" sm:w-6  sm:h-6 w-4 h-4 rounded-full bg-white flex items-center justify-center '
+">
+{tag}      
             </li>
           ))}
         </ul>

@@ -24,9 +24,9 @@ function Intro() {
             height={100}
             quality={95}
             priority={true}
-            src="/roba2.jpg"
+            src="/ratio.png"
             alt={"Profile Pictures"}
-            className="w-50 h-50 m-6 rounded-full border-2 border-white shadow "
+            className="w-45 h-45 m-6 rounded-full border-2 border-white object-fill shadow "
           />
         </motion.div>
         <motion.div
@@ -34,7 +34,7 @@ function Intro() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <p className="mx-2 max-w-[50rem] rounded-xl shadow bg-white dark:bg-gray-600 p-2 px-4 text-2xl font-medium leading-relaxed text-gray-600 dark:text-gray-300 sm:text-4xl">
+          <p className="mx-2 max-w-[50rem] rounded-xl shadow bg-gray-100 dark:bg-gray-600 p-2 px-4 text-2xl font-medium leading-relaxed text-gray-600 dark:text-gray-300 sm:text-4xl">
             Hello❤️I'm {""}
             <span className=" font-bold text-black dark:text-white">Robani Girma! </span>A
             full-stack developer with {""}
