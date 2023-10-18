@@ -58,20 +58,7 @@ export const myprojects = [
       ],
     img: lulawi,
     link:"lulawi.com"
-  },
-  {
-    title: "Lulawi",
-    description:
-      "I worked as a front-end developer on this project,Used for a Promotion",
-    tags: [
-      React.createElement(FaReact),
-      React.createElement(BiLogoTailwindCss),
-      React.createElement(SiTypescript),
-      React.createElement(TbBrandNextjs),
-      ],
-    img: lulawi,
-    link:"lulawi.com"
-  },
+  }
 ] as const;
 // export const myskills=[
 //   {
