@@ -34,7 +34,7 @@ const Projects = ({ title, description, img, tags ,link}: projectprop) => {
      <Layout clasName="rounded-lg p-5 shadow bg-gray-100 dark:bg-gray-700 " >
       <section className=" ">
       <div className=" flex  items-center justify-center ">
-      <div className="w-1/2 gap-2">
+      <div className="w-1/2 gap-3">
       <h3 className="text-xl font-medium dark:text-white ">{title}</h3>
         <p className="text-gray-500 dark:text-gray-300">{description}</p>
         
@@ -50,7 +50,13 @@ const Projects = ({ title, description, img, tags ,link}: projectprop) => {
         <a href={`http://${link}`} >Live Demo</a> <ArrowTopRightOnSquareIcon className="w-4 h-4 text-bold "/>
       </div>
       </div>
-      <Image quality={95} alt="Project Image" className="w-1/2 rounded-lg" src={img}/>
+     <a href={`http://${link}`} className="w-1/2 rounded-lg ">
+     <Image quality={95} alt="Project Image" className=" transition rounded-lg 
+        hover:scale-[1.04]
+        hover:-translate-x-3
+        hover:translate-y-3
+        hover:-rotate-2" src={img}/>
+     </a>
       
       </div>
      

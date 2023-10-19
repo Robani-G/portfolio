@@ -1,15 +1,11 @@
 import lulawi from "public/lulawi.png";
-import reactjs from "public/reactss.jpg"
-import nextjs from"public/nextttt.png"
-import tailwindcss from "public/ta.jpg"
-import typescript from "public/OIP.jpg"
-import laravel from "public/laravel.jpg"
-import php from "public/php.png"
-import git from "public/git.jpg"
+import emalog from "public/Emalog.png";
+
 import {AiFillGithub, AiFillLinkedin,AiFillHtml5 } from 'react-icons/ai';
 import {FaReact,FaLaravel,FaPhp} from 'react-icons/fa'
 import {TbBrandNextjs} from 'react-icons/tb'
-import {SiTypescript,SiTrpc} from 'react-icons/si'
+import {BsFillBootstrapFill} from 'react-icons/bs'
+import {SiTypescript,SiTrpc, SiMysql} from 'react-icons/si'
 import {BiLogoTailwindCss,BiLogoJavascript,BiLogoCss3} from 'react-icons/bi'
 
 
@@ -53,11 +49,20 @@ export const myprojects = [
       React.createElement(BiLogoTailwindCss),
       React.createElement(SiTypescript),
       React.createElement(TbBrandNextjs),
-
-
       ],
     img: lulawi,
     link:"lulawi.com"
+  },
+  {
+    title: "Emalog",
+    description:
+      "I worked as a full-stack developer on this project for a year,I was working to desgin and develop Emalog  service customer registration system.",
+    tags: [      React.createElement(FaPhp),
+      React.createElement(BsFillBootstrapFill),
+      React.createElement(SiMysql),
+      ],
+    img: emalog,
+    link:"emalog.gov.et"
   }
 ] as const;
 // export const myskills=[
@@ -89,12 +94,12 @@ export const Experiences=[
   {
     title:"Html,Css,Javascript",
     location:"",
-    description:"I learned these first from youtube ",
+    description:"I learned these fundamentals first from highschool. ",
     date:"Jan 1 2019"
   }, {
     title:"React,Nextjs",
     location:"",
-    description:"After mastering on the fundamentals front-end stack I learned these  efficient reusable front-end frame work",
+    description:"After mastering on the fundamentals front-end stack I learned these  efficient reusable front-end frame work ",
     date:"Feb 2020"
   },
   {
