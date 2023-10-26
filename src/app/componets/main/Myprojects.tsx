@@ -31,8 +31,7 @@ type projectprop = (typeof myprojects)[number];
 const Projects = ({ title, description, img, tags ,link}: projectprop) => {
   return (
     <>
-     <Layout clasName="rounded-lg p-5 shadow bg-gray-100 dark:bg-gray-700 " >
-      <section className=" ">
+      <section className="rounded-lg  shadow bg-gray-100 p-3  dark:bg-gray-700 ">
       <div className=" flex  items-center justify-center ">
       <div className="w-1/2 gap-3">
       <h3 className="text-xl font-medium dark:text-white ">{title}</h3>
@@ -61,7 +60,6 @@ const Projects = ({ title, description, img, tags ,link}: projectprop) => {
       </div>
      
       </section>
-     </Layout>
     </>
   );
 };
