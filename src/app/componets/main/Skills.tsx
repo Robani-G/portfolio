@@ -52,7 +52,7 @@ export function Skillsimage({images}:Skillsimage) {
  viewport={{
    once: true,
  }}
- className='sm:w-11 bg-gray-200  sm:h-11 w-9 h-9 rounded-full flex  items-center justify-center'
+ className='sm:w-14 bg-gray-200  sm:h-14 w-11 h-11 rounded-full flex  items-center justify-center'
  custom={index}
  >             
   {/* <Image quality={95} alt="Project Image" className="w-8 h-8  rounded-full object-cover m-2 " src={img}/> */}
