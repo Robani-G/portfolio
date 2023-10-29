@@ -56,7 +56,7 @@ export const myprojects = [
   {
     title: "Emalog",
     description:
-      "I worked as a full-stack developer on this project for a year,I was working to desgin and develop Emalog  service customer registration system.",
+      "I worked as a back-end developer on this project for a year,I was working to develop Emalog  service customer registration system.",
     tags: [      React.createElement(FaPhp),
       React.createElement(BsFillBootstrapFill),
       React.createElement(SiMysql),

@@ -6,7 +6,7 @@ const Myprojects = () => {
       <div className="rounded-lg scroll-mt-28 "  id="Projects">
         <SectionHeading>My Projects</SectionHeading>
 
-        <div className="flex flex-col  gap-4 max-w-[42rem] max-h-[26rem] mb-8 ">
+        <div className="flex flex-col  gap-4 max-w-[42rem] mb-8 ">
           {myprojects.map((pro, index) => (
             <>
               <React.Fragment key={index}>
@@ -31,9 +31,9 @@ type projectprop = (typeof myprojects)[number];
 const Projects = ({ title, description, img, tags ,link}: projectprop) => {
   return (
     <>
-      <section className="rounded-lg  shadow bg-gray-100 p-3  dark:bg-gray-700 ">
-      <div className=" flex  items-center justify-center ">
-      <div className="w-1/2 gap-3">
+      <section className="rounded-lg  shadow bg-gray-100 py-5 px-3  dark:bg-gray-700 ">
+      <div className=" flex flex-col-reverse gap-2  sm:flex-row items-center justify-center ">
+      <div className="sm:w-1/2 w-full space-y-2">
       <h3 className="text-xl font-medium dark:text-white ">{title}</h3>
         <p className="text-gray-500 dark:text-gray-300">{description}</p>
         
@@ -45,11 +45,9 @@ const Projects = ({ title, description, img, tags ,link}: projectprop) => {
             </li>
           ))}
         </ul>
-        <div className=" flex text-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 items-center">
-        <a href={`http://${link}`} >Live Demo</a> <ArrowTopRightOnSquareIcon className="w-4 h-4 text-bold "/>
+        
       </div>
-      </div>
-     <a href={`http://${link}`} className="w-1/2 rounded-lg ">
+     <a href={`http://${link}`} className="sm:w-1/2 rounded-lg ">
      <Image quality={95} alt="Project Image" className=" transition rounded-lg 
         hover:scale-[1.04]
         hover:-translate-x-3
@@ -58,7 +56,9 @@ const Projects = ({ title, description, img, tags ,link}: projectprop) => {
      </a>
       
       </div>
-     
+      <div className=" flex justify-end text-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 items-center">
+        <a href={`http://${link}`} >Live Demo</a> <ArrowTopRightOnSquareIcon className="w-4 h-4 text-bold text-end  "/>
+      </div>
       </section>
     </>
   );
