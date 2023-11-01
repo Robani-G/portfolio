@@ -1,7 +1,7 @@
 import lulawi from "public/lulawi.png";
 import emalog from "public/Emalog.png";
 
-import {AiFillGithub, AiFillLinkedin,AiFillHtml5 } from 'react-icons/ai';
+import {AiFillGithub,AiFillHtml5 } from 'react-icons/ai';
 import {FaReact,FaLaravel,FaPhp} from 'react-icons/fa'
 import {TbBrandNextjs} from 'react-icons/tb'
 import {BsFillBootstrapFill} from 'react-icons/bs'
@@ -56,7 +56,7 @@ export const myprojects = [
   {
     title: "Emalog",
     description:
-      "I worked as a back-end developer on this project for a year,I was working to develop Emalog  service customer registration system.",
+      "I worked as a back-end developer on this project for a year,I was working to  develop Emalog  service customer registration system.",
     tags: [      React.createElement(FaPhp),
       React.createElement(BsFillBootstrapFill),
       React.createElement(SiMysql),
@@ -70,24 +70,40 @@ export const myprojects = [
 //     images:[reactjs,nextjs,tailwindcss,typescript,laravel,php,git]
 //   }
 export const myskills=[
-  {
-    images:[React.createElement(AiFillGithub),
-      React.createElement(FaReact),
-      React.createElement(TbBrandNextjs),
-      React.createElement(FaLaravel),
-      React.createElement(FaPhp),
-      React.createElement(SiTypescript),
-      React.createElement(SiTrpc),
-      React.createElement(AiFillHtml5),
-      React.createElement(BiLogoCss3),
-      React.createElement(BiLogoJavascript),
+  {title:'Git',
+  image:      React.createElement(AiFillGithub),
+  },
+{title:'React',
+  image:     
+  React.createElement(FaReact),},
+  {title:'Nextjs',
+  image:    
+  React.createElement(TbBrandNextjs)},
+  {  title:'Laravel',
+  image:      
+  React.createElement(FaLaravel),
+},
+ { title:'PHP',
+  image:    
+    
+  React.createElement(FaPhp)},
+{  title:'Typescript',
+  image:    
+  React.createElement(SiTypescript)},
 
-      React.createElement(BiLogoTailwindCss),
-
-
-    ]
-  }
-  
+{  title:'Trpc',
+  image:     
+  React.createElement(SiTrpc)},
+  {  title:'Html',
+  image:     
+  React.createElement(AiFillHtml5)},
+  {  title:'Css',
+  image:     
+  React.createElement(BiLogoCss3)},
+  {  title:'Javascript',
+  image:     
+  React.createElement(BiLogoJavascript),
+}
 ]as const;
 export const Experiences=[
 

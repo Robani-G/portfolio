@@ -48,13 +48,13 @@ function Intro() {
       <div className=" item-center mt-4 flex flex-col justify-center gap-2 px-4 sm:flex-row   ">
         <a
           href="/portfolio.pdf"
-          className="flex w-full items-center justify-center rounded-lg bg-gray-600 hover:bg-gray-900 text-white dark:bg-gray-900  p-2 text-black sm:w-1/4"
+          className="flex w-full items-center justify-center rounded-xl bg-gray-600 hover:bg-gray-900 text-white dark:bg-gray-900  p-2 text-black sm:w-1/4"
         >
           Download Cv <ArrowDownCircleIcon className="h-7 w-5" />
         </a>
         <Link
           href="#Contact"
-          className="flex w-full items-center justify-center rounded-lg bg-gray-900  dark:bg-white hover:bg-gray-600 p-2 text-white dark:text-black sm:w-1/4"
+          className="flex w-full items-center justify-center rounded-xl bg-gray-900  dark:bg-white hover:bg-gray-600 p-2 text-white dark:text-black sm:w-1/4"
         >
           Contact me here
           <ArrowLongRightIcon className="h-5 w-7" />

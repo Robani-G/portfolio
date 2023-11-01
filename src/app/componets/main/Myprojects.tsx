@@ -31,8 +31,8 @@ type projectprop = (typeof myprojects)[number];
 const Projects = ({ title, description, img, tags ,link}: projectprop) => {
   return (
     <>
-      <section className="rounded-lg  shadow bg-gray-100 py-5 px-3  dark:bg-gray-700 ">
-      <div className=" flex flex-col-reverse gap-2  sm:flex-row items-center justify-center ">
+      <section className="rounded-xl  shadow bg-gray-100 py-5 px-3  dark:bg-gray-700 ">
+      <div className=" flex flex-col-reverse gap-2  sm:flex-row items-center justify-center  ">
       <div className="sm:w-1/2 w-full space-y-2">
       <h3 className="text-xl font-medium dark:text-white ">{title}</h3>
         <p className="text-gray-500 dark:text-gray-300">{description}</p>
