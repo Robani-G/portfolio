@@ -1,11 +1,15 @@
 import lulawi from "public/lulawi.png";
 import emalog from "public/Emalog.png";
+import moga from "public/moga1.png";
+
 
 import {AiFillGithub,AiFillHtml5 } from 'react-icons/ai';
 import {FaReact,FaLaravel,FaPhp} from 'react-icons/fa'
 import {TbBrandNextjs} from 'react-icons/tb'
 import {BsFillBootstrapFill} from 'react-icons/bs'
-import {SiTypescript,SiTrpc, SiMysql} from 'react-icons/si'
+import {BiLogoFirebase} from 'react-icons/bi'
+
+import {SiTypescript,SiTrpc, SiMysql,SiSanity,SiPrisma} from 'react-icons/si'
 import {BiLogoTailwindCss,BiLogoJavascript,BiLogoCss3} from 'react-icons/bi'
 
 
@@ -42,6 +46,20 @@ export const links = [
 ] as const;
 export const myprojects = [
   {
+    title: "Moga",
+    description:
+      "I worked as a full-stack developer on this project,this is a charity website",
+    tags: [      React.createElement(FaReact),
+      React.createElement(BiLogoTailwindCss),
+      React.createElement(SiTypescript),
+      React.createElement(TbBrandNextjs),
+      React.createElement(SiSanity),
+
+      ],
+    img: moga,
+    link:"https://moga-charity.vercel.app/"
+  },
+  {
     title: "Lulawi",
     description:
       "I worked as a front-end developer on this project,Used for a Promotion",
@@ -65,10 +83,7 @@ export const myprojects = [
     link:"emalog.gov.et"
   }
 ] as const;
-// export const myskills=[
-//   {
-//     images:[reactjs,nextjs,tailwindcss,typescript,laravel,php,git]
-//   }
+
 export const myskills=[
   {title:'Git',
   image:      React.createElement(AiFillGithub),
@@ -103,6 +118,18 @@ export const myskills=[
   {  title:'Javascript',
   image:     
   React.createElement(BiLogoJavascript),
+},
+{  title:'Sanity io',
+image:     
+React.createElement(SiSanity),
+},
+{  title:'Prisma',
+image:     
+React.createElement(SiPrisma),
+},
+{  title:'Firebase',
+image:     
+React.createElement(BiLogoFirebase),
 }
 ]as const;
 export const Experiences=[

@@ -50,7 +50,7 @@ function Skills() {
   >             
  <TooltipProvider>
   <Tooltip>
-    <TooltipTrigger> {skill.image}
+    <TooltipTrigger > {skill.image}
 </TooltipTrigger>
     <TooltipContent>
       <p>{skill.title}</p>
