@@ -27,7 +27,7 @@ export default function RootLayout({
     
       
     <html lang="en" className='  '>
-      <body className={`container mx-auto dark:bg-gray-800  `}>
+      <body className={`container mx-auto dark:bg-gray-800 font-sanserif `}>
        <Flowbite>
        <Toaster position='top-right'/>
       <Header />

@@ -57,7 +57,7 @@ export const myprojects = [
 
       ],
     img: moga,
-    link:"https://moga-charity.vercel.app/"
+    link:"moga-charity.vercel.app"
   },
   {
     title: "Lulawi",
