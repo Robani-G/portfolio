@@ -1,6 +1,7 @@
 import lulawi from "public/lulawi.png";
 import emalog from "public/Emalog.png";
 import moga from "public/moga1.png";
+import astro from "public/astro1.png";
 
 
 import {AiFillGithub,AiFillHtml5 } from 'react-icons/ai';
@@ -45,6 +46,18 @@ export const links = [
  
 ] as const;
 export const myprojects = [
+  {
+    title: "Astro",
+    description:
+      "Consultancy&Training ",
+    tags: [      React.createElement(FaReact),
+      React.createElement(BiLogoTailwindCss),
+      React.createElement(SiTypescript),
+      React.createElement(TbBrandNextjs),
+      ],
+    img: astro,
+    link:"log-comp.vercel.app/"
+  },
   {
     title: "Moga",
     description:

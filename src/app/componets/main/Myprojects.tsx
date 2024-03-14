@@ -25,13 +25,14 @@ import React from "react";
 import Image from "next/image";
 import { myprojects } from "@/app/lib/data";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 type projectprop = (typeof myprojects)[number];
 
 const Projects = ({ title, description, img, tags ,link}: projectprop) => {
   return (
     <>
-      <section className="rounded-xl  shadow bg-gray-100 py-5 px-3  dark:bg-gray-700 ">
+      <section className="rounded-xl  shadow bg-gray-100 py-5 px-3  dark:bg-gray-700 group  ">
       <div className=" flex flex-col-reverse gap-2  sm:flex-row items-center justify-center  ">
       <div className="sm:w-1/2 w-full space-y-2">
       <h3 className="text-xl font-medium dark:text-white ">{title}</h3>
@@ -47,17 +48,20 @@ const Projects = ({ title, description, img, tags ,link}: projectprop) => {
         </ul>
         
       </div>
-     <a href={`http://${link}`} className="sm:w-1/2 rounded-lg ">
+     <a href={`http://${link}`} className="sm:w-1/2 rounded-lg  even:right-[initial]
+       even-left-40  ">
      <Image quality={95} alt="Project Image" className=" transition rounded-lg 
         hover:scale-[1.04]
         hover:-translate-x-3
         hover:translate-y-3
-        hover:-rotate-2" src={img}/>
+        hover:-rotate-2
+      "
+         src={img}/>
      </a>
       
       </div>
       <div className=" flex justify-end text-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 items-center">
-        <a href={`http://${link}`} >Live Demo</a> <ArrowTopRightOnSquareIcon className="w-4 h-4 text-bold text-end  "/>
+        <Link href={`http://${link}`} >Live</Link> <ArrowTopRightOnSquareIcon className="w-4 h-4 text-bold text-end  "/>
       </div>
       </section>
     </>
