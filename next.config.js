@@ -8,6 +8,16 @@ const nextConfig = {
         // your project has ESLint errors.
         ignoreDuringBuilds: true,
       },
+      images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'images.unsplash.com',
+            port: '',
+            pathname: '/account123/**',
+          },
+        ],
+      },
 }
 
 module.exports = nextConfig

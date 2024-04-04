@@ -8,8 +8,14 @@ import {
 import {AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { motion } from "framer-motion";
 import Link from "next/link";
+const words = " I am Picasso. I am Michelangelo. I am Steve Jobs, said Kanye. I am  Robani The first rule of Coding is: you do not talk about Coding. The second rule of Coding is: you do not talk about Coding . ";
+
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+
 function Intro() {
+  
   return (
+    
     <>
       <div className="mt-9 h-[500px] items-center justify-center gap-5  sm:mt-0 sm:flex "
       id="Home">
@@ -29,21 +35,9 @@ function Intro() {
             className="w-45 h-45 m-6 rounded-full border-2 border-white object-fill shadow "
           />
         </motion.div>
-        <motion.div
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <p className="mx-2 max-w-[50rem] rounded-xl shadow bg-gray-100 dark:bg-gray-600 p-2 px-4 text-2xl font-medium leading-relaxed text-gray-600 dark:text-gray-300 sm:text-4xl">
-            Hello❤️I'm {""}
-            <span className=" font-bold text-black dark:text-white">Robani Girma! </span>A
-            full-stack developer with {""}
-            <span className=" font-bold text-black dark:text-white">2 </span>
-            Years of experience and a degree in {""}
-            <span className=" font-bold text-black dark:text-white">Computer Science </span>I
-            enjoy building websites.
-          </p>
-        </motion.div>
+       
+          <TextGenerateEffect words={words} />
+      
       </div>
       <div className=" item-center mt-4 flex flex-col justify-center gap-2 px-4 sm:flex-row   ">
         <a

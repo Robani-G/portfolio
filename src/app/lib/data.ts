@@ -49,7 +49,7 @@ export const myprojects = [
   {
     title: "Astro",
     description:
-      "Consultancy&Training ",
+      "This project highlights my expertise in both front-end and back-end web development, ensuring a smooth and responsive experience for users. By collaborating closely with the client, I delivered a website that effectively showcases Astro Logistic Consultancy's services and expertise, enhancing their online presence in the logistics industry",
     tags: [      React.createElement(FaReact),
       React.createElement(BiLogoTailwindCss),
       React.createElement(SiTypescript),
@@ -75,7 +75,7 @@ export const myprojects = [
   {
     title: "Lulawi",
     description:
-      "I worked as a front-end developer on this project,Used for a Promotion",
+      "I served as a Front-End Developer specializing in React and Next.js for a book promotion website. My role involved developing user-friendly interfaces, optimizing for mobile devices, and ensuring high performance." ,
     tags: [      React.createElement(FaReact),
       React.createElement(BiLogoTailwindCss),
       React.createElement(SiTypescript),
@@ -87,7 +87,7 @@ export const myprojects = [
   {
     title: "Emalog",
     description:
-      "I worked as a back-end developer on this project for a year,I was working to  develop Emalog  service customer registration system.",
+      " I served as a Backend PHP Developer . I was responsible for server-side  web application  logic  and integration of the front-end ",
     tags: [      React.createElement(FaPhp),
       React.createElement(BsFillBootstrapFill),
       React.createElement(SiMysql),
@@ -174,6 +174,6 @@ export const Experiences=[
     title:"Graduated at Unity University",
     location:"Addis Ababa",
     description:"Bachelor degree in Computer Science",
-    date:"July 27 2022"
+    date:"July 21 2023"
   },
 ]as const;
