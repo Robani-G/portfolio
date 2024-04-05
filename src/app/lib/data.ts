@@ -1,7 +1,7 @@
-import lulawi from "public/lulawi.png";
-import emalog from "public/Emalog.png";
-import moga from "public/moga1.png";
-import astro from "public/astro1.png";
+const lulawi=  "/lulawi.png";
+const  emalog=  "/Emalog.png";
+const moga= "/moga1.png";
+const astro = "/astro1.png";
 
 
 import {AiFillGithub,AiFillHtml5 } from 'react-icons/ai';

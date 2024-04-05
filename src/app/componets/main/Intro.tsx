@@ -8,7 +8,7 @@ import {
 import {AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { motion } from "framer-motion";
 import Link from "next/link";
-const words = " I am Picasso. I am Michelangelo. I am Steve Jobs, said Kanye. I am  Robani The first rule of Coding is: you do not talk about Coding. The second rule of Coding is: you do not talk about Coding . ";
+const words = " I am Picasso. I am Michelangelo. I am Steve Jobs, said Kanye. I am  Robani you know the Business,I know the Chemistry. ";
 
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
