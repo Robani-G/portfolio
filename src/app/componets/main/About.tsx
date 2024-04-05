@@ -10,7 +10,7 @@ function About() {
         id="About"
       >
         <SectionHeading>About Me</SectionHeading>
-
+        
         <p className="  max-w-[70rem] rounded-xl p-2 px-4 text-xl font-medium leading-relaxed text-gray-600 dark:text-gray-300 sm:text-2xl">
          Hello ,my name is Robani Girma  I'm 22 Years old and my passion for web devlopment strated in 2018,Since then,
          I have been  dedicated to learning and mastering various web devlopment techologies  such as  HTML,CSS,Javascript,React,Nextjs.

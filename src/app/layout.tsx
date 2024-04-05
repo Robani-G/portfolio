@@ -6,6 +6,7 @@ import Header from './componets/Header'
 import { Toaster } from 'react-hot-toast'
 import Footer from './componets/Footer'
 import { DarkThemeToggle, Flowbite } from 'flowbite-react';
+import { WavyBackground } from '@/components/ui/wavy-background'
 
 
 
@@ -28,6 +29,7 @@ export default function RootLayout({
       
     <html lang="en" className='  '>
       <body className={`container mx-auto dark:bg-black font-sanserif `}>
+
        <Flowbite>
        <Toaster position='top-right'/>
       <Header />
@@ -35,6 +37,7 @@ export default function RootLayout({
         {children}
         <Footer/>
        </Flowbite>
+       
         </body>
     </html>
   )

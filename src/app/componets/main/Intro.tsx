@@ -1,6 +1,8 @@
 "use client"
 import Image from "next/image";
 import React from "react";
+import { Button } from "@/components/ui/moving-border";
+
 import {
   ArrowDownCircleIcon,
   ArrowLongRightIcon,
@@ -40,6 +42,12 @@ function Intro() {
       
       </div>
       <div className=" item-center mt-4 flex flex-col justify-center gap-2 px-4 sm:flex-row   ">
+      <Button
+        borderRadius="1.75rem"
+        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+      >
+        Borders are cool
+      </Button>
         <a
           href="/portfolio.pdf"
           className="flex w-full items-center justify-center rounded-xl bg-gray-600 hover:bg-gray-900 text-white dark:bg-gray-900 dark:hover:bg-gray-500  p-2 text-black sm:w-1/4"

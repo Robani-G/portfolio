@@ -1,6 +1,5 @@
 const lulawi=  "/lulawi.png";
 const  emalog=  "/Emalog.png";
-const moga= "/moga1.png";
 const astro = "/astro1.png";
 
 
@@ -56,22 +55,9 @@ export const myprojects = [
       React.createElement(TbBrandNextjs),
       ],
     img: astro,
-    link:"log-comp.vercel.app/"
+    link:"astro-testone.vercel.app/"
   },
-  {
-    title: "Moga",
-    description:
-      "I worked as a full-stack developer on this project,this is a charity website",
-    tags: [      React.createElement(FaReact),
-      React.createElement(BiLogoTailwindCss),
-      React.createElement(SiTypescript),
-      React.createElement(TbBrandNextjs),
-      React.createElement(SiSanity),
-
-      ],
-    img: moga,
-    link:"moga-charity.vercel.app"
-  },
+  
   {
     title: "Lulawi",
     description:
