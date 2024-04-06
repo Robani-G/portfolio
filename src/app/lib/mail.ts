@@ -1,48 +1,28 @@
-import nodemailer from "nodemailer"
-import React from "react";
+// const nodemailer = require("nodemailer");
 
-export async function sendmail(formdata:FormData) {
-    // const {SMPT_EMAIL,SMPT_PASSWORD}=process.env;
-    const sub=formdata.get('subject');
-    const message=formdata.get('message');
-    const senderEmail=formdata.get('senderemail');
+// const transporter = nodemailer.createTransport({
+//   host: "smtp.ethereal.email",
+//   port: 587,
+//   secure: false, // Use `true` for port 465, `false` for all other ports
+//   auth: {
+//     user: "robanigirma2021@gmail.com"           ,
+//     pass: "rxbb inrx gpcq drdt",
+//   },
+// });
 
+// // async..await is not allowed in global scope, must use a wrapper
+// async function sendmail() {
+//   // send mail with defined transport object
+//   const info = await transporter.sendMail({
+//     from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
+//     to: "bar@example.com, baz@example.com", // list of receivers
+//     subject: "Hello ✔", // Subject line
+//     text: "Hello world?", // plain text body
+//     html: "<b>Hello world?</b>", // html body
+//   });
 
-    const transporter = nodemailer.createTransport({
-      service:"gmail",
-         auth: {
-           user: "robanigirma2021@gmail.com"           ,
-           pass: "rxbb inrx gpcq drdt",
-         },
-       });
-       try{
-        const testResult=await transporter.verify();
-        console.log(testResult);
-       } catch(error){
-        console.log(error)
-        return ;
-       }
-       try {
-        if(!sub || typeof sub !=="string"){
-          return {error:"invalid sub"}
-        }
-        if(!message || typeof message !=="string"){
-          return {error:"invalid sub"}
-        }
-       
-        const sendresult= await transporter.sendMail({
-            from:"robanigirma2021@gmail.com",
-            to:"robanigirma2021@gmail.com",
-            subject:sub,
-            html:message,
-         
+//   console.log("Message sent: %s", info.messageId);
+//   // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
+// }
 
-        })
-        console.log(sendresult);
-       }
-       catch(error)
-       {console.log(error)}
-       
-}
-
-  
+// sendmail().catch(console.error);

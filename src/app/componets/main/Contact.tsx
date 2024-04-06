@@ -4,16 +4,21 @@ import SectionHeading from '../Sectionheading'
 import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
 import { toast } from 'react-hot-toast';
 import { sendEmail } from '@/app/action/sendEmail';
-import { experimental_useFormStatus } from 'react-dom';
-import { sendmail } from '@/app/lib/mail';
+// import {useFormStatus } from 'react-dom';
+// import { sendmail } from '@/app/lib/mail';
 export default function Contact() {
-  // const pending = experimental_useFormStatus();
-  const handlesubmit=async(formdata:FormData)=>{
+  // const pending = useFormStatus();
+  const handlesubmit=async(formData:FormData)=>{
     "use Server"
 
     
-    console.log(formdata);
-    // await sendmail(formdata);
+    // console.log(formdata);
+   const {data,error}= await sendEmail(formData);
+   if(error){
+    toast.error("failed ")
+   }
+   toast.success("Email Sent Successfully")
+    
   }
   return (
  <>
