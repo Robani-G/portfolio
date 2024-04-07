@@ -26,16 +26,22 @@ function Intro() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           className="flex items-center justify-center"
+          // className="w-45 h-45 m-6    "
         >
+          <div className="  sm:h-36 sm:w-36 h-24 w-24 mt-9 sm:mt-0 relative">
           <Image
-            width={100}
-            height={100}
+          layout="fill"
+          objectFit="cover"
+           
             quality={95}
-            priority={true}
+            // priority={true}
             src="/ratio.png"
             alt={"Profile Pictures"}
-            className="w-45 h-45 m-6 rounded-full border-2 border-white object-fill shadow "
+            className="rounded-full"
+        
           />
+          </div>
+        
         </motion.div>
        
           <TextGenerateEffect words={words} />
