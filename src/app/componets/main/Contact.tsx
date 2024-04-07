@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Layout from '../layout'
 import SectionHeading from '../Sectionheading'
 import { PaperAirplaneIcon } from '@heroicons/react/24/solid'
@@ -8,17 +8,27 @@ import { sendEmail } from '@/app/action/sendEmail';
 // import { sendmail } from '@/app/lib/mail';
 export default function Contact() {
   // const pending = useFormStatus();
+  const ref=useRef<HTMLFormElement>(null);
   const handlesubmit=async(formData:FormData)=>{
     "use Server"
-
     
     // console.log(formdata);
    const {data,error}= await sendEmail(formData);
-   if(error){
-    toast.error("failed ")
-   }
-   toast.success("Email Sent Successfully")
+   try {
     
+    if (error) {
+      // Handle error responses
+      throw new Error('Failed to send email');
+    }
+    // Email sent successfully
+    toast.success('Email Sent Successfully');
+  } catch (error) {
+    // Log and handle errors
+    console.error('Error sending email:', error);
+    toast.error('Failed to send email');
+  }
+  ref.current?.reset();
+
   }
   return (
  <>
@@ -32,6 +42,7 @@ export default function Contact() {
     <a href="mailto:robanigirma2021@gmail.com" className='text-black font-bold  dark:text-white'>robanigirma2021@gmail.com</a>
     </p>
     <form className='p-2 flex flex-col gap-2  '
+    ref={ref}
 action={handlesubmit}
 method='POST'
 // onSubmit={handlesubmit}
