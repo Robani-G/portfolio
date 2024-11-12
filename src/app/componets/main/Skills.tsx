@@ -53,7 +53,7 @@ function Skills() {
     <TooltipTrigger > {skill.image}
 </TooltipTrigger>
     <TooltipContent>
-      <p>{skill.title}</p>
+      <p> {skill.title}</p>
     </TooltipContent>
   </Tooltip>
 </TooltipProvider>

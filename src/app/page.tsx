@@ -4,7 +4,7 @@ import Intro from './componets/main/Intro'
 import About from './componets/main/About'
 import Myprojects from './componets/main/Myprojects'
 import Skills from './componets/main/Skills'
-import Experience from './componets/main/Experience'
+import {TimelineDemo} from './componets/main/TimelineDemo'
 import Contact from './componets/main/Contact'
 import { Dcard } from './componets/main/Dcard'
 
@@ -16,7 +16,8 @@ export default function Home() {
         <Myprojects   />
         <About />
         <Skills/>
-        <Experience/>
+        {/* <Experience/> */}
+        <TimelineDemo/>
         <Contact/>
       </main>
   )

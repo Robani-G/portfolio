@@ -1,6 +1,7 @@
 const lulawi=  "/lulawi.png";
 const  emalog=  "/Emalog.png";
 const astro = "/astro1.png";
+const newface = "/newface.png";
 
 
 import {AiFillGithub,AiFillHtml5 } from 'react-icons/ai';
@@ -8,6 +9,7 @@ import {FaReact,FaLaravel,FaPhp} from 'react-icons/fa'
 import {TbBrandNextjs} from 'react-icons/tb'
 import {BsFillBootstrapFill} from 'react-icons/bs'
 import {BiLogoFirebase} from 'react-icons/bi'
+import { FaAtlassian } from "react-icons/fa";
 
 import {SiTypescript,SiTrpc, SiMysql,SiSanity,SiPrisma} from 'react-icons/si'
 import {BiLogoTailwindCss,BiLogoJavascript,BiLogoCss3} from 'react-icons/bi'
@@ -55,13 +57,27 @@ export const myprojects = [
       React.createElement(TbBrandNextjs),
       ],
     img: astro,
-    link:"astro-testone.vercel.app/"
+    link:"log-comp.vercel.app/"
+  },
+  {
+    title: "Corridor Development",
+    description:
+      "I developed a corridor management system using React with TypeScript, Tailwind CSS, and Inertia.js, creating a seamless, single-page experience. With Laravel powering the admin backend and Aetherinity.js enabling real-time updates, this project demonstrates my skill in building responsive, efficient web applications.",
+    tags: [      React.createElement(FaReact),
+      React.createElement(BiLogoTailwindCss),
+      React.createElement(SiTypescript),
+      React.createElement(TbBrandNextjs),
+      React.createElement(FaAtlassian),
+
+      ],
+    img: newface ,
+    link:"corridor.benolconstruction.com/"
   },
   
   {
     title: "Lulawi",
     description:
-      "I served as a Front-End Developer specializing in React and Next.js for a book promotion website. My role involved developing user-friendly interfaces, optimizing for mobile devices, and ensuring high performance." ,
+      "I served as a Backend PHP Developer, handling server-side application logic and front-end integration to deliver seamless functionality, showcasing my expertise in efficient, responsive backend development" ,
     tags: [      React.createElement(FaReact),
       React.createElement(BiLogoTailwindCss),
       React.createElement(SiTypescript),

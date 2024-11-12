@@ -48,7 +48,10 @@ function Intro() {
       
       </div>
       <div className=" item-center mt-4 flex flex-col justify-center gap-2 px-4 sm:flex-row   ">
-     
+        
+      {/* <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+        Figma Outline
+      </button> */}
         <a
           href="/portfolio.pdf"
           className="flex w-full items-center justify-center rounded-xl bg-gray-600 hover:bg-gray-900 text-white dark:bg-gray-900 dark:hover:bg-gray-500  p-2 text-black sm:w-1/4"
