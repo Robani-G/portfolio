@@ -71,7 +71,7 @@ export const myprojects = [
 
       ],
     img: newface ,
-    link:"corridor.benolconstruction.com/"
+    link:"corridorandriverside.gov.et/"
   },
   
   {
